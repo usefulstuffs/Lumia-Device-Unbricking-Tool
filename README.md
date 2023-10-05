@@ -9,13 +9,13 @@ Easy to use tool to unbrick your lumia
 3. ***PATIENCE***, it can take a lot, depending from your Lumia phone.
 
 ## How to use
-1. Download the tool from releases
+1. Download the tool from [releases](https://github.com/builtbyvichingo455/Lumia-Device-Unbricking-Tool/releases/latest)
 2. Open it
 3. Fill all fields (press the help button for more)
 4. Click Unbrick and wait
 5. A popup with instructions will appear after the tool finishes flashing
 
 ## UI
-![Lumia Device Unbricking Tool - Overview](https://github.com/builtbyvichingo455/Lumia-Device-Unbricking-Tool/assets/59311016/35357844-f458-4c41-bae4-723f9beeeed0)
+![Lumia Device Unbricking Tool - Overview](https://github.com/builtbyvichingo455/Lumia-Device-Unbricking-Tool/assets/59311016/a70eda84-104e-44a5-9ceb-4509affc2bd2)
 
 ##### Copyright (C) 2023 Vichingo455. All rights reserved.
