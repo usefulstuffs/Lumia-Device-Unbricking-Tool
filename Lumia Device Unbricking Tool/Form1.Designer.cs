@@ -46,6 +46,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.edpmode = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -56,7 +57,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(220, 24);
+            this.label1.Location = new System.Drawing.Point(28, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(335, 29);
             this.label1.TabIndex = 0;
@@ -229,11 +230,23 @@
             this.linkLabel1.Text = "Get Recovery/Firmware files - lumiafirmware.com";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // edpmode
+            // 
+            this.edpmode.AutoSize = true;
+            this.edpmode.Location = new System.Drawing.Point(430, 30);
+            this.edpmode.Name = "edpmode";
+            this.edpmode.Size = new System.Drawing.Size(194, 20);
+            this.edpmode.TabIndex = 10;
+            this.edpmode.Text = "EDP Mode (modern lumias)";
+            this.edpmode.UseVisualStyleBackColor = true;
+            this.edpmode.CheckedChanged += new System.EventHandler(this.edpmode_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.edpmode);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label2);
@@ -280,6 +293,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.CheckBox edpmode;
     }
 }
 

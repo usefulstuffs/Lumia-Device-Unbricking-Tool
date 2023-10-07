@@ -33,27 +33,57 @@ namespace Lumia_Device_Unbricking_Tool
 
         private void button2_Click(object sender, EventArgs e)
         {
-            OpenFileDialog hexofd = new OpenFileDialog();
-            hexofd.CheckFileExists = true;
-            hexofd.Filter = "Hexadecimal recovery file|*.hex";
-            hexofd.Multiselect = false;
-            hexofd.Title = "Select hexadecimal recovery file";
-            if (hexofd.ShowDialog() == DialogResult.OK)
+            if (edpmode.Checked)
             {
-                textBox2.Text = hexofd.FileName;
+                OpenFileDialog hexofd = new OpenFileDialog();
+                hexofd.CheckFileExists = true;
+                hexofd.Filter = "Hexadecimal recovery file|*.ede";
+                hexofd.Multiselect = false;
+                hexofd.Title = "Select hexadecimal recovery file";
+                if (hexofd.ShowDialog() == DialogResult.OK)
+                {
+                    textBox2.Text = hexofd.FileName;
+                }
+            }
+            else
+            {
+                OpenFileDialog hexofd = new OpenFileDialog();
+                hexofd.CheckFileExists = true;
+                hexofd.Filter = "Hexadecimal recovery file|*.hex";
+                hexofd.Multiselect = false;
+                hexofd.Title = "Select hexadecimal recovery file";
+                if (hexofd.ShowDialog() == DialogResult.OK)
+                {
+                    textBox2.Text = hexofd.FileName;
+                }
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            OpenFileDialog thor2ofd = new OpenFileDialog();
-            thor2ofd.CheckFileExists = true;
-            thor2ofd.Filter = "msimage.mbn|*.mbn";
-            thor2ofd.Multiselect = false;
-            thor2ofd.Title = "Select msimage.mbn recovery file";
-            if (thor2ofd.ShowDialog() == DialogResult.OK)
+            if (edpmode.Checked)
             {
-                textBox3.Text = thor2ofd.FileName;
+                OpenFileDialog thor2ofd = new OpenFileDialog();
+                thor2ofd.CheckFileExists = true;
+                thor2ofd.Filter = "ED recovery file|*.edp";
+                thor2ofd.Multiselect = false;
+                thor2ofd.Title = "Select ED recovery file";
+                if (thor2ofd.ShowDialog() == DialogResult.OK)
+                {
+                    textBox3.Text = thor2ofd.FileName;
+                }
+            }
+            else
+            {
+                OpenFileDialog thor2ofd = new OpenFileDialog();
+                thor2ofd.CheckFileExists = true;
+                thor2ofd.Filter = "msimage.mbn|*.mbn";
+                thor2ofd.Multiselect = false;
+                thor2ofd.Title = "Select msimage.mbn recovery file";
+                if (thor2ofd.ShowDialog() == DialogResult.OK)
+                {
+                    textBox3.Text = thor2ofd.FileName;
+                }
             }
         }
 
@@ -104,16 +134,42 @@ namespace Lumia_Device_Unbricking_Tool
             else
             {
                 MessageBox.Show("Flashing will start, don't disconnect Lumia during this procedure. Disconnecting may cause the permanent brick of the device.","Lumia Device Unbricking Tool - Warning",MessageBoxButtons.OK,MessageBoxIcon.Warning);
-                // For debugging the commands it's going to run:
-                // File.WriteAllText(@"C:\LDUT_debug.txt", $@"{quote}{textBox1.Text}{quote} -mode emergency -hexfile {quote}{textBox2.Text}{quote} -mbnfile {quote}{textBox3.Text}{quote} -ffufile {quote}{textBox4.Text}{quote}");
-                Process.Start(textBox1.Text,$@"-mode emergency -hexfile {quote}{textBox2.Text}{quote} -mbnfile {quote}{textBox3.Text}{quote} -ffufile {quote}{textBox4.Text}{quote}").WaitForExit();
+                if (edpmode.Checked)
+                {
+                    Process.Start(textBox1.Text, $@"-mode emergency -hexfile {quote}{textBox2.Text}{quote} -edfile {quote}{textBox3.Text}{quote} -ffufile {quote}{textBox4.Text}{quote}").WaitForExit();
+                }
+                else
+                {
+                    Process.Start(textBox1.Text, $@"-mode emergency -hexfile {quote}{textBox2.Text}{quote} -mbnfile {quote}{textBox3.Text}{quote} -ffufile {quote}{textBox4.Text}{quote}").WaitForExit();
+                }
                 MessageBox.Show("Flashing finished. Check now your Lumia's screen.\n\nIf it's in a Green screen, forcedly reboot it by pressing and holding volume down+power button.\n\nIf it's still in a red screen, try again.", "Lumia Device Unbricking Tool - Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($@"How to use this tool:{Environment.NewLine}{Environment.NewLine}Path to thor2.exe - Install Windows Device Recovery Tool and search in its installation folder (usually C:\Program Files (x86)\Microsoft Care Suite\Windows Device Recovery Tool).{Environment.NewLine}{Environment.NewLine}Hexadecimal (.hex) file for recovery - The .hex file you get from lumiafirmware.com under the emergency files section.{Environment.NewLine}{Environment.NewLine}msimage.mbn file for recovery - You get this file from lumiafirmware.com under the emergency files section{Environment.NewLine}{Environment.NewLine}Firmware flash (.ffu) file - This is the firmware file. You can get it from both lumiafirmware.com and Windows Device Recovery Tool cache from a previous update.","Lumia Device Unbricking Tool - Help",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            if (edpmode.Checked)
+            {
+                MessageBox.Show($@"How to use this tool:{Environment.NewLine}{Environment.NewLine}Path to thor2.exe - Install Windows Device Recovery Tool and search in its installation folder (usually C:\Program Files (x86)\Microsoft Care Suite\Windows Device Recovery Tool).{Environment.NewLine}{Environment.NewLine}Hexadecimal (.ede) file for recovery - The .ede file you get from lumiafirmware.com under the emergency files section.{Environment.NewLine}{Environment.NewLine}ED (.edp) file for recovery - You get this file from lumiafirmware.com under the emergency files section{Environment.NewLine}{Environment.NewLine}Firmware flash (.ffu) file - This is the firmware file. You can get it from both lumiafirmware.com and Windows Device Recovery Tool cache from a previous update.{Environment.NewLine}{Environment.NewLine}EDP mode - Tick the checkbox if your lumia cames with a .edp emergency file and not an msimage.mbn recovery file.", "Lumia Device Unbricking Tool - Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show($@"How to use this tool:{Environment.NewLine}{Environment.NewLine}Path to thor2.exe - Install Windows Device Recovery Tool and search in its installation folder (usually C:\Program Files (x86)\Microsoft Care Suite\Windows Device Recovery Tool).{Environment.NewLine}{Environment.NewLine}Hexadecimal (.hex) file for recovery - The .hex file you get from lumiafirmware.com under the emergency files section.{Environment.NewLine}{Environment.NewLine}msimage.mbn file for recovery - You get this file from lumiafirmware.com under the emergency files section{Environment.NewLine}{Environment.NewLine}Firmware flash (.ffu) file - This is the firmware file. You can get it from both lumiafirmware.com and Windows Device Recovery Tool cache from a previous update.{Environment.NewLine}{Environment.NewLine}EDP mode - Tick the checkbox if your lumia cames with a .edp emergency file and not an msimage.mbn recovery file.", "Lumia Device Unbricking Tool - Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void edpmode_CheckedChanged(object sender, EventArgs e)
+        {
+            if (edpmode.Checked) 
+            {
+                groupBox3.Text = "ED (.edp) file for recovery";
+                groupBox2.Text = "Hexadecimal (.ede) file for recovery";
+            }
+            else
+            {
+                groupBox3.Text = "msimage.mbn file for recovery";
+                groupBox2.Text = "Hexadecimal (.hex) file for recovery";
+            }
         }
     }
 }
