@@ -57,37 +57,42 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 21);
+            this.label1.Location = new System.Drawing.Point(21, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 29);
+            this.label1.Size = new System.Drawing.Size(262, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lumia Device Unbricking Tool";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(6, 21);
+            this.textBox1.Location = new System.Drawing.Point(4, 17);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(661, 27);
+            this.textBox1.Size = new System.Drawing.Size(546, 23);
             this.textBox1.TabIndex = 1;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 102);
+            this.groupBox1.Location = new System.Drawing.Point(9, 83);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(776, 55);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(614, 45);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Path to thor2.exe";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(685, 24);
+            this.button1.Location = new System.Drawing.Point(554, 22);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 2;
             this.button1.Text = "Browse";
             this.button1.UseVisualStyleBackColor = true;
@@ -97,18 +102,21 @@
             // 
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Location = new System.Drawing.Point(12, 173);
+            this.groupBox2.Location = new System.Drawing.Point(9, 141);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(776, 55);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(616, 45);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Hexadecimal (.hex) file for recovery";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(685, 24);
+            this.button2.Location = new System.Drawing.Point(556, 21);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(56, 19);
             this.button2.TabIndex = 2;
             this.button2.Text = "Browse";
             this.button2.UseVisualStyleBackColor = true;
@@ -117,28 +125,32 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(6, 21);
+            this.textBox2.Location = new System.Drawing.Point(4, 17);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(661, 27);
+            this.textBox2.Size = new System.Drawing.Size(546, 23);
             this.textBox2.TabIndex = 1;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.Controls.Add(this.textBox3);
-            this.groupBox3.Location = new System.Drawing.Point(12, 245);
+            this.groupBox3.Location = new System.Drawing.Point(9, 199);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(776, 55);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(616, 45);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "msimage.mbn file for recovery";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(685, 24);
+            this.button3.Location = new System.Drawing.Point(554, 22);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(56, 19);
             this.button3.TabIndex = 2;
             this.button3.Text = "Browse";
             this.button3.UseVisualStyleBackColor = true;
@@ -147,28 +159,32 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(6, 21);
+            this.textBox3.Location = new System.Drawing.Point(4, 17);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(661, 27);
+            this.textBox3.Size = new System.Drawing.Size(546, 23);
             this.textBox3.TabIndex = 1;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.button4);
             this.groupBox4.Controls.Add(this.textBox4);
-            this.groupBox4.Location = new System.Drawing.Point(12, 321);
+            this.groupBox4.Location = new System.Drawing.Point(9, 261);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(776, 55);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Size = new System.Drawing.Size(616, 45);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Firmware flash (.ffu) file";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(685, 24);
+            this.button4.Location = new System.Drawing.Point(556, 22);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(56, 19);
             this.button4.TabIndex = 2;
             this.button4.Text = "Browse";
             this.button4.UseVisualStyleBackColor = true;
@@ -177,19 +193,21 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(6, 21);
+            this.textBox4.Location = new System.Drawing.Point(4, 17);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(661, 27);
+            this.textBox4.Size = new System.Drawing.Size(548, 23);
             this.textBox4.TabIndex = 1;
             // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Red;
-            this.button5.Location = new System.Drawing.Point(18, 389);
+            this.button5.Location = new System.Drawing.Point(14, 316);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(115, 49);
+            this.button5.Size = new System.Drawing.Size(86, 40);
             this.button5.TabIndex = 6;
             this.button5.Text = "UNBRICK";
             this.button5.UseVisualStyleBackColor = true;
@@ -199,9 +217,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(15, 72);
+            this.label2.Location = new System.Drawing.Point(11, 58);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(754, 16);
+            this.label2.Size = new System.Drawing.Size(612, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "WARNING! Incorrectly setting up these values can brick your phone even more. Use " +
     "this tool only if you know what you\'re doing";
@@ -210,9 +229,10 @@
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Lime;
-            this.button6.Location = new System.Drawing.Point(149, 389);
+            this.button6.Location = new System.Drawing.Point(112, 316);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(115, 49);
+            this.button6.Size = new System.Drawing.Size(86, 40);
             this.button6.TabIndex = 8;
             this.button6.Text = "HELP";
             this.button6.UseVisualStyleBackColor = true;
@@ -222,9 +242,10 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(409, 418);
+            this.linkLabel1.Location = new System.Drawing.Point(305, 339);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(379, 20);
+            this.linkLabel1.Size = new System.Drawing.Size(314, 17);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Get Recovery/Firmware files - lumiafirmware.com";
@@ -233,9 +254,10 @@
             // edpmode
             // 
             this.edpmode.AutoSize = true;
-            this.edpmode.Location = new System.Drawing.Point(430, 30);
+            this.edpmode.Location = new System.Drawing.Point(322, 24);
+            this.edpmode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.edpmode.Name = "edpmode";
-            this.edpmode.Size = new System.Drawing.Size(194, 20);
+            this.edpmode.Size = new System.Drawing.Size(154, 17);
             this.edpmode.TabIndex = 10;
             this.edpmode.Text = "EDP Mode (modern lumias)";
             this.edpmode.UseVisualStyleBackColor = true;
@@ -243,9 +265,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(636, 366);
             this.Controls.Add(this.edpmode);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button6);
@@ -258,6 +280,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Lumia Device Unbricking Tool - lumiafirmware.com";

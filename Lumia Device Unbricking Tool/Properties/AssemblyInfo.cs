@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Vichingo455")]
 [assembly: AssemblyProduct("Lumia Device Unbricking Tool")]
-[assembly: AssemblyCopyright("Copyright © 2023 Vichingo455. All rights reserved.")]
+[assembly: AssemblyCopyright("Copyright © 2025 Vichingo455. All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
