@@ -16,6 +16,7 @@ Easy to use tool to unbrick your lumia
 5. A popup with instructions will appear after the tool finishes flashing
 
 ## UI
-![Lumia Device Unbricking Tool - Overview](https://github.com/builtbyvichingo455/Lumia-Device-Unbricking-Tool/assets/59311016/a70eda84-104e-44a5-9ceb-4509affc2bd2)
+![image](https://github.com/user-attachments/assets/20c38f6c-6c24-455e-98ec-27ec32225086)
+
 
 ##### Copyright (C) 2023 Vichingo455. All rights reserved.
